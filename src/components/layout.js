@@ -52,21 +52,6 @@ const Layout = ({ children }) => {
                     </li>
 
                     <li>
-                        <Link to="/stats" className="nav-link">
-                            Stats
-                        </Link>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://sponsor.ajay.app/news"
-                            className="nav-link"
-                        >
-                            Blog
-                        </a>
-                    </li>
-
-                    <li>
                         <a
                             href="https://wiki.sponsor.ajay.app/w/Guidelines"
                             className="nav-link"
@@ -94,13 +79,13 @@ const Layout = ({ children }) => {
                 <ul className="nav">
                     <li className="author">
                         <a
-                            href="https://ajay.app/"
+                            href="https://github.com/orgs/Spot-SponsorBlock/people"
                             className="nav-link text-small profile"
                         >
-                            Created by Ajay Ramachandran
+                            Created by The Spot SponsorBlock Team
                             <img
-                                src="/ajay_profile.jpg"
-                                alt="Ajay's avatar"
+                                src="/RectangleIconSponsorBlocker.png"
+                                alt="Organization logo"
                             ></img>
                         </a>
                     </li>
@@ -117,46 +102,7 @@ const Layout = ({ children }) => {
 
                     <li>
                         <a
-                            href="https://matrix.to/#/#sponsor:ajay.app?via=ajay.app&via=matrix.org&via=mozilla.org"
-                            className="nav-link"
-                            title="Matrix Invite"
-                            style={{ height: "28.8px", display: "flex", alignItems: "center" }}
-                        >
-                            <img src="/matrix.svg" style={{ height: "19.2px"}} />
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://bsky.app/profile/sponsor.ajay.app"
-                            className="nav-link"
-                        >
-                            <i className="fa-brands fa-bluesky"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://fosstodon.org/@sponsorblock"
-                            className="nav-link"
-                            rel="me"
-                        >
-                            <i className="fa-brands fa-mastodon"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://twitter.com/SponsorBlock"
-                            className="nav-link"
-                        >
-                            <i className="fa-brands fa-twitter"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock"
+                            href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension"
                             className="nav-link"
                         >
                             <i className="fa-brands fa-github"></i>

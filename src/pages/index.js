@@ -6,47 +6,39 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
-    const [totalStats, setTotalStats] = useState({
-        apiUsers: "Loading",
-        totalSubmissions: "Loading",
-        minutesSaved: "Loading",
-    });
-
     const chromeLink = "https://chrome.google.com/webstore/detail/mnjggcdmjocbbbhaepdhchncahnbgone";
     const firefoxLink = "https://addons.mozilla.org/addon/sponsorblock";
-
-    useEffect(() => {
-        fetch("https://sponsor.ajay.app/api/getTotalStats")
-            .then((response) => response.json())
-            .then((resultData) => resultData.apiUsers !== undefined ? setTotalStats(resultData) : null);
-    }, []);
 
     return (
         <Layout>
             <Seo
                 title="Home"
-                overwriteTitle="SponsorBlock - Skip over YouTube Sponsors - Sponsorship Skipper"
+                overwriteTitle="Spot SponsorBlock - Skip over Spotify Podcast Sponsors - Sponsorship Skipper"
             />
 
             <div className="title">
                 <img src="/LogoSponsorBlock256px.png" alt="Logo" />
 
-                <span style={{ color: "white" }}>SponsorBlock</span>
+                <span style={{ color: "white" }}>Spot SponsorBlock</span>
             </div>
             
             <div className="container">
                 <div className="">
                     <p>
-                        SponsorBlock is an open-source crowdsourced browser
-                        extension and open API for skipping sponsor segments in
-                        YouTube videos. Users submit when a sponsor happens from
+                        Spot SponsorBlock is an open-source crowdsourced browser
+                        extension which utilises the{" "}
+                        <a href="https://wiki.sponsor.ajay.app/w/API_Docs">
+                            SponsorBlock API
+                        </a>{" "}
+                        for skipping sponsor segments in
+                        Spotify podcasts. Users submit when a sponsor happens from
                         the extension, and the extension automatically skips
                         sponsors it knows about using a{" "}
                         <a href="https://github.com/ajayyy/SponsorBlock/wiki/K-Anonymity">
                             privacy preserving query system
                         </a>
                         . It also supports skipping other categories, such as
-                        intros, outros and reminders to subscribe, and skipping
+                        intros, outros and self promotions, and skipping
                         to the point with highlight.
                     </p>
 
@@ -58,47 +50,19 @@ const IndexPage = () => {
                         for server status.
                     </p>
 
-                    <p>
-                        There are currently{" "}
-                        <strong>{totalStats.apiUsers.toLocaleString()}</strong>{" "}
-                        users who have submitted{" "}
-                        <strong>
-                            {totalStats.totalSubmissions.toLocaleString()}
-                        </strong>{" "}
-                        skip segments, which have saved a total of{" "}
-                        <strong>
-                            {isNaN(totalStats.minutesSaved)
-                                ? totalStats.minutesSaved
-                                : Math.floor(
-                                      totalStats.minutesSaved / 60 / 24 / 365
-                                  )}
-                        </strong>{" "}
-                        years and{" "}
-                        <strong>
-                            {isNaN(totalStats.minutesSaved)
-                                ? totalStats.minutesSaved
-                                : (
-                                      (totalStats.minutesSaved / 60 / 24) %
-                                      365
-                                  ).toFixed(2)}
-                        </strong>{" "}
-                        days of people's lives. Check out{" "}
-                        <Link to="/stats">the leaderboard</Link>.
-                    </p>
-
                     <a style={{display: "flex",
                             alignItems: "center",
                             justifyContent: "center",
                             textDecoration: "none"
                         }}
-                        href="https://dearrow.ajay.app"
+                        href="https://sponsor.ajay.app/"
                         target="_blank"
                         rel="noreferrer">
-                        <img src="dearrow.svg"
+                        <img src="LogoYoutubeSponsorBlock256px.png"
                             style={{width: "35px", padding: "10px"}}/>
 
                         <span>
-                            Tired of clickbait? Also check out DeArrow
+                            Also check out SponsorBlock for Youtube
                         </span>
                     </a>
 
@@ -172,68 +136,15 @@ const IndexPage = () => {
                                 style={{ height: "58px" }}
                             />
                         </a>
-
-                        <h3>3rd Party Ports</h3>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/3rd-Party-Ports#mpv-media-player"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img src="/mpv.png" alt="Download for MPV" />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/3rd-Party-Ports#kodi"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/kodi.svg"
-                                alt="Download for Kodi"
-                                style={{ height: "30px" }}
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/dmunozv04/iSponsorBlockTV#compatibility"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/tv.png"
-                                alt="Download for TVs"
-                                style={{ height: "30px" }}
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/3rd-Party-Ports#android-tv"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/androidtv.png"
-                                alt="Download for Android TV"
-                                style={{ height: "30px" }}
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/3rd-Party-Ports#Chromecast"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/chromecast.svg"
-                                alt="Download for Chromecast"
-                                style={{ height: "30px" }}
-                            />
-                        </a>
                     </div>
 
                     <div className="donate-ask">
                         <div className="donate-text">
                             <img
-                                src="/ajay_profile.jpg"
-                                alt="Ajay's avatar"
+                                src="/RectangleIconSponsorBlocker.png"
+                                alt="Organization logo"
                             ></img>
-                            Support my full-time work on SponsorBlock 
+                            Support our development of Spot SponsorBlock
                         </div>
 
                         <Link to="/donate" className="donate-button">
@@ -243,12 +154,12 @@ const IndexPage = () => {
 
                     <p>
                         The{" "}
-                        <a href="https://github.com/ajayyy/SponsorBlock">
+                        <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension">
                             source code
                         </a>{" "}
                         is fully open and the{" "}
                         <a href="https://sponsor.ajay.app/database">database</a>{" "}
-                        can be downloaded by anyone. I want to keep this as open
+                        can be downloaded by anyone. We want to keep this as open
                         as possible! You can view the docs for the{" "}
                         <a href="https://wiki.sponsor.ajay.app/w/API_Docs">
                             public API
@@ -266,23 +177,30 @@ const IndexPage = () => {
 
                     <p className="text-center">
                         Come chat with us on{" "}
-                        <a href="https://discord.gg/SponsorBlock">Discord</a> or{" "}
-                        <a href="https://matrix.to/#/#sponsor:ajay.app?via=ajay.app&via=matrix.org&via=mozilla.org">
-                            Matrix
-                        </a>
+                        <a href="https://discord.gg/SponsorBlock">Discord</a>
                         .
                     </p>
 
                     <p style={{ fontSize: "0.7em", textAlign: "center" }}>
-                        SponsorBlock works best alongside YouTube Premium and
+                        Spot SponsorBlock works best alongside Spotify Premium and
                         uBlock Origin.
                     </p>
 
                     <h4 className="text-center">Credit</h4>
 
                     <p className="text-center">
-                        Built and maintained by{" "}
-                        <a href="https://ajay.app/">Ajay Ramachandran</a>
+                        Site built by{" "}
+                        <a href="https://ajay.app/">
+                        Ajay Ramachandran
+                        </a>.{" "}
+                        The original code can be found{" "}
+                        <a href="https://github.com/ajayyy/SponsorBlockSite">
+                        here
+                        </a>{" "}
+                        and our forked version{" "}
+                        <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlockSite">
+                        here
+                        </a>
                     </p>
 
                     <p className="text-center">
@@ -290,28 +208,29 @@ const IndexPage = () => {
                         <a href="https://github.com/jplsek">Jeremy Plsek</a>
                     </p>
 
-                    <p>
-                        Thanks to all{" "}
-                        <a href="https://github.com/ajayyy/SponsorBlock/graphs/contributors">
-                            SponsorBlock contributors
+                    <p className="text-center">
+                        Extension forked from the amazing{' '}
+                        <a href="https://github.com/ajayyy/SponsorBlock">
+                        SponsorBlock
                         </a>
-                        ,{" "}
+                        . A special thanks to{' '}
+                        <a href="https://github.com/ajayyy">Ajay</a>{' '}
+                        for his help throughout our development
+                    </p>
+
+                    <p>
+                        Thanks to all{' '}
+                        <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/graphs/contributors">
+                        Spot SponsorBlock contributors
+                        </a>{' '}
+                        and{' '}
                         <a href="https://github.com/ajayyy/SponsorBlockServer/graphs/contributors">
-                            SponsorBlockServer contributors
-                        </a>{" "}
-                        and{" "}
-                        <a href="https://github.com/ajayyy/SponsorBlockSite/graphs/contributors">
-                            SponsorBlockSite contributors
-                        </a>{" "}
-                        such as <a href="https://github.com/NDevTK">NDev</a>,{" "}
-                        <a href="https://github.com/Joe-Dowd">Joe Dowd</a>,{" "}
-                        <a href="https://mchang.name/">Michael Chang</a> and
-                        more.
+                        SponsorBlockServer contributors
+                        </a>
                     </p>
 
                     <p className="text-center">
-                        Logo by{" "}
-                        <a href="https://github.com/munadikieh">@munadikieh</a>
+                    Logo by <a href="https://github.com/munadikieh">@munadikieh</a> and modified by <a href="https://github.com/jiraph">@jiraph</a>
                     </p>
 
                     <p className="text-center">
@@ -321,50 +240,6 @@ const IndexPage = () => {
                         {", "}
                         <a href="https://gist.github.com/ajayyy/9e8100f069348e0bc062641f34d6af12">
                             Terms of Use
-                        </a>
-                    </p>
-
-                    <h4 className="text-center" style={{ marginBottom: "0" }}>Links to other cool things</h4>
-
-                    <p className="text-center footer-links" style={{ fontSize: "11px", marginTop: "0px" }}>
-                        <a href="https://github.com/mchangrh/yt-neuter">
-                            yt-neuter
-                        </a>
-                        <a href="https://github.com/mchangrh/uscripts">
-                            yt uscripts
-                        </a>
-                        <a href="https://github.com/gorhill/uBlock">
-                            uBlock Origin
-                        </a>
-                        <a href="https://github.com/amitbl/blocktube">
-                            BlockTube
-                        </a>
-                        <a href="https://darkreader.org/">
-                            Dark Reader
-                        </a>
-                        <a href="https://filmot.com/">
-                            Filmot
-                        </a>
-                        <a href="https://nekocap.com/">
-                            NekoCap
-                        </a>
-                        <a href="https://github.com/yt-dlp/yt-dlp">
-                            yt-dlp
-                        </a>
-                        <a href="https://restic.net/">
-                            Restic
-                        </a>
-                        <a href="https://flashpointarchive.org/">
-                            Flashpoint
-                        </a>
-                        <a href="https://wiki.archiveteam.org/">
-                            Archive Team
-                        </a>
-                        <a href="https://datahorde.org/">
-                            Data Horde
-                        </a>
-                        <a href="https://bettertransitottawa.ca/">
-                            Better Transit Ottawa
                         </a>
                     </p>
                 </div>

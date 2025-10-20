@@ -1,10 +1,11 @@
-# SponsorBlock Landing
+# Spot SponsorBlock Landing
+Forked from [SponsorBlockSite](https://github.com/ajayyy/SponsorBlockSite)
 
 This uses the `gatsby` static site generator.
 
 Install `npm` to start.
 
-Then `cd SponsorBlockSite`.
+Then `cd Spot-SponsorBlockSite`.
 
 ### Install dependencies
 

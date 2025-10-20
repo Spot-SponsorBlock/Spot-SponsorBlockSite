@@ -11,8 +11,8 @@ const IndexPage = () => (
             <h2>How it works</h2>
 
             <p>
-                When you visit a YouTube video, it will check the database to
-                see if anyone has made any submissions for the video. If so, the
+                When you listen to a Spotify podcast, it will check the database to
+                see if anyone has made any submissions for the podcast. If so, the
                 segment will automatically get skipped when you reach it.
             </p>
 
@@ -39,7 +39,7 @@ const IndexPage = () => (
 
             <p>
                 To prevent one submission with a lot of votes never being able
-                to be replaced, I decided to use a weighted random distribution
+                to be replaced, a weighted random distribution is used
                 based on the equation on the right.
                 <br />
                 <img
@@ -57,7 +57,7 @@ const IndexPage = () => (
             </p>
 
             <p>
-                You can read more about my algorithm{" "}
+                This algorithm was created by <a href="https://github.com/ajayyy">Ajay</a>. You can read more about it{" "}
                 <a href="https://blog.ajay.app/voting-and-pseudo-randomness-or-sponsorblock-or-youtube-sponsorship-segment-blocker">
                     here
                 </a>
@@ -68,11 +68,11 @@ const IndexPage = () => (
 
             <p>
                 Anyone can submit segments, either by clicking on the button
-                that is added to the YouTube player or by opening the extensions
-                popup. The button in the YouTube player can be hidden. You click
+                that is added to the Spotify player or by opening the extensions
+                popup. The button in the Spotify player can be hidden. You click
                 once to indicate the start of a segment, then click again to
                 indicate the end. You can submit as many segments as there are
-                in the video. Make sure to choose the correct category for each
+                in the podcast. Make sure to choose the correct category for each
                 segment.
             </p>
 
@@ -89,21 +89,15 @@ const IndexPage = () => (
             <h3>Previous projects like this</h3>
 
             <p>
-                In January 2019, a group of people tried to do a similar thing,
-                but instead of using other people's submissions to skip sponsor
-                segments for everyone, they{" "}
-                <a href="https://github.com/Sponsoff">
-                    ran the data through a neural network
-                </a>
-                . Sadly, this project was abandoned.
+                This project is forked from <a href="https://github.com/ajayyy/SponsorBlock">SponsorBlock</a>, 
+                which does the same thing but for YouTube. A lot of our code
+                and infrastructure is reused from that project.
             </p>
 
             <p>
-                I don't want something similar to happen to this project, that's
-                why all this code is open-sourced and, most importantly, the
-                database can be downloaded by anyone. The database may even be
-                automatically backed up by archive.org! The database will always
-                be available{" "}
+                Spot SponsorBlock uses the same server as the original SponsorBlock 
+                and is hosted by <a href="https://github.com/ajayyy">Ajay</a>. 
+                The database can be downloaded by anyone and will always be available{" "}
                 <a href="https://api.sponsor.ajay.app/database">here</a>. It is
                 a csv and can be opened in any csv or text reading program.
                 Certain sensitive info is not in this database and is not public
@@ -115,23 +109,19 @@ const IndexPage = () => (
             <h3>When was this started</h3>
 
             <p>
-                The project was started July 5th 2019 and was first released to
-                the public July 26th 2019.
+                The project originally started as a school project September
+                2nd 2025. When our school project extension was done we forked
+                SponsorBlock and utilised our previous code and knowledge 
+                to make Spot SponsorBlock which started 29th September 2025.
+                It was first released to the public on ??th ??? 2025.
             </p>
 
             <h2>Contact Info</h2>
 
-            <p>If you have any suggestions, feel free to tell me.</p>
+            <p>If you have any suggestions, feel free to tell us.</p>
 
             <p>
-                You can find all my progress updates here:{" "}
-                <a href="https://sponsor.ajay.app/news">
-                    https://sponsor.ajay.app/news
-                </a>
-            </p>
-
-            <p>
-                You can contact me by email at dev @ ajay.app if you have any
+                You can contact us by email at dev @ spotsponsorblock.org if you have any
                 questions.
             </p>
 
@@ -142,84 +132,58 @@ const IndexPage = () => (
                 </a>
             </p>
 
-            <p>
-                Or follow on Twitter:{" "}
-                <a href="https://twitter.com/SponsorBlock">
-                    https://twitter.com/SponsorBlock
-                </a>
-            </p>
-
             <h4>Credit</h4>
 
             <p>
-                Built and maintained by{" "}
-                <a href="https://ajay.app/">Ajay Ramachandran</a>
+                Site built by{" "}
+                <a href="https://ajay.app/">
+                Ajay Ramachandran
+                </a>.{" "}
+                The original code can be found{" "}
+                <a href="https://github.com/ajayyy/SponsorBlockSite">
+                here
+                </a>{" "}
+                and our forked version{" "}
+                <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlockSite">
+                here
+                </a>
+            </p>
+            
+            <p>
+                Extension forked from the amazing{' '}
+                <a href="https://github.com/ajayyy/SponsorBlock">
+                    SponsorBlock
+                </a>
+                . A special thanks to{' '}
+                <a href="https://github.com/ajayyy">Ajay</a>{' '}
+                for his help throughout our development
             </p>
 
             <p>
-                Thanks to all{" "}
-                <a href="https://github.com/ajayyy/SponsorBlock/graphs/contributors">
-                    SponsorBlock contributors
-                </a>{" "}
-                and{" "}
+                Thanks to all{' '}
+                <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/graphs/contributors">
+                    Spot SponsorBlock contributors
+                </a>{' '}
+                and{' '}
                 <a href="https://github.com/ajayyy/SponsorBlockServer/graphs/contributors">
                     SponsorBlockServer contributors
-                </a>{" "}
-                such as <a href="https://github.com/NDevTK">NDev</a>,{" "}
-                <a href="https://github.com/Joe-Dowd">Joe Dowd</a>,{" "}
-                <a href="https://mchang.name/">Michael Chang</a> and more.
-            </p>
-
-            <p>
-                Logo by <a href="https://github.com/munadikieh">@munadikieh</a>
-            </p>
-
-            <p>
-                Some icons made by{" "}
-                <a
-                    href="https://www.flaticon.com/authors/gregor-cresnar"
-                    title="Gregor Cresnar"
-                >
-                    Gregor Cresnar
-                </a>{" "}
-                from{" "}
-                <a href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com
-                </a>{" "}
-                and are licensed by{" "}
-                <a
-                    href="http://creativecommons.org/licenses/by/3.0/"
-                    title="Creative Commons BY 3.0"
-                >
-                    CC 3.0 BY
                 </a>
             </p>
 
             <p>
-                Some icons made by{" "}
-                <a
-                    href="https://www.flaticon.com/authors/freepik"
-                    title="Freepik"
-                >
-                    Freepik
-                </a>{" "}
-                from{" "}
-                <a href="https://www.flaticon.com/" title="Flaticon">
-                    www.flaticon.com
-                </a>{" "}
-                and are licensed by{" "}
-                <a
-                    href="http://creativecommons.org/licenses/by/3.0/"
-                    title="Creative Commons BY 3.0"
-                >
-                    CC 3.0 BY
-                </a>
+                Logo by <a href="https://github.com/munadikieh">@munadikieh</a> and modified by <a href="https://github.com/jiraph">@jiraph</a>
             </p>
 
             <p>
-                The awesome{" "}
-                <a href="https://docs.invidious.io/">Invidious API</a> was used
-                previously.
+                Some icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and are licensed by <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </p>
+
+            <p>
+                Some icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> and are licensed by <a href="https://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+            </p>
+
+            <p>
+                Some icons made by <a href="https://dazzleui.gumroad.com/l/dazzleiconsfree/" title="Dazzle Ui">Dazzle Ui</a> from <a href="https://www.svgrepo.com/" target="SVG Repo">SVG Repo</a> and are licensed by <a href="https://creativecommons.org/licenses/by/4.0/" title="Creative Commons BY 4.0" target="_blank">CC 4.0 BY</a>
             </p>
         </div>
     </Layout>

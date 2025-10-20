@@ -28,11 +28,11 @@ export function DonateComponent() {
                 </div>
 
                 <div style={{ visibility: activeButton === null ? "hidden" : "visible" }}>
-                    <a href="https://github.com/sponsors/ajayyy-org?frequency=one-time" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sponsors/Spot-SponsorBlock?frequency=one-time" target="_blank" rel="noopener noreferrer">
                         One-time
                     </a>
 
-                    <a href="https://github.com/sponsors/ajayyy-org?frequency=recurring" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/sponsors/Spot-SponsorBlock?frequency=recurring" target="_blank" rel="noopener noreferrer">
                         Monthly
                     </a>
 
@@ -46,32 +46,15 @@ export function DonateComponent() {
             <span style={{ display: !showOtherDonationMethods ? "none" : null, textAlign: "center" }}>
                 <p>
                     Recurring:{" "}
-                    <a href="https://github.com/sponsors/ajayyy-org">
+                    <a href="https://github.com/sponsors/Spot-SponsorBlock">
                         GitHub (lowest fees)
                     </a>
-                    ,{" "}
-                    <a href="https://www.patreon.com/ajayyy">Patreon</a>
-                    ,{" "}
-                    <a href="https://liberapay.com/ajayyy">Liberapay</a>
                 </p>
 
                 <p>
                     One-time donation:{" "}
-                    <a href="https://github.com/sponsors/ajayyy-org?frequency=one-time">
+                    <a href="https://github.com/sponsors/Spot-SponsorBlock?frequency=one-time">
                         GitHub (lowest fees)
-                    </a>
-                    , <a href="https://paypal.me/ajayyy">Paypal</a>,{" "}
-                    <a style={{ textDecoration: "underline" }} onClick={() => {
-                        alert("dev@ajay.app");
-                    }}>Interac e-Transfer</a>,{" "}
-                    <a style={{ textDecoration: "underline" }} onClick={() => {
-                        alert("BIC: TRWIBEB1XXX\nIBAN: BE74 9678 0459 0007");
-                    }}>SEPA</a>,{" "}
-                    <a href="bitcoin:bc1qvnjvuqycefz593pu6f2vpngml8ld9wjqd5qcus">
-                        BTC
-                    </a>,{" "}
-                    <a href="monero:85vyiPD4yby5bfkN51kSuc9sjZCMmBaoE5t1MCvxX4SuQMamgK7D8LGYbhkm1XGkgPgYn1FBBa3MiDGANXigEUJcEWib6H8">
-                        XMR
                     </a>
                 </p>
             </span>

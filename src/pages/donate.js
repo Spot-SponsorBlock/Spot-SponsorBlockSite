@@ -12,13 +12,16 @@ const IndexPage = () => (
             <h1>Donate</h1>
 
             <p>
-                Hi, I'm Ajay.
-                For the past 5 years, I've been working open-source tools like SponsorBlock and DeArrow.
-                Thanks to your support, I am now able to work on these open-source projects full time.
+                Hi there 👋! We are Spot SponsorBlock, 
+                an organization dedicated to developing our{" "}
+                <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension">
+                open-source web extension
+                </a>{" "}
+                with the same name.
             </p>
 
             <p>
-                If you'd like to help make that possible, consider supporting using an option below.
+                Consider supporting our development using an option below so that we can keep working on maintaining and improving the extension.❤️
             </p>
 
             <DonateComponent />
@@ -28,9 +31,10 @@ const IndexPage = () => (
             <h4>Creators</h4>
 
             <p>
-                Consider helping out the creators of videos you watch by
-                donating to their crowdfunding campaigns, or subscribing to
-                services such as YouTube Premium.
+                Consider helping out the creators of podcasts you listen to by
+                subscribing to them on services such as Patreon, or by any other
+                means supporting them so that they can continue their mission of 
+                keeping you entertained.
             </p>
 
             <h4>Contributors</h4>
@@ -38,24 +42,21 @@ const IndexPage = () => (
             <p>
                 Also check out all the other contributors who have helped out
                 with this project;{" "}
-                <a href="https://github.com/ajayyy/SponsorBlock/graphs/contributors">
-                    SponsorBlock contributors
+                <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/graphs/contributors">
+                    Spot SponsorBlock contributors
                 </a>
                 ,{" "}
                 <a href="https://github.com/ajayyy/SponsorBlockServer/graphs/contributors">
                     SponsorBlockServer contributors
                 </a>{" "}
                 and{" "}
-                <a href="https://github.com/ajayyy/SponsorBlockSite/graphs/contributors">
-                    SponsorBlockSite contributors
-                </a>{" "}
-                such as <a href="https://github.com/NDevTK">NDev</a>,{" "}
-                <a href="https://github.com/Joe-Dowd">Joe Dowd</a>,{" "}
-                <a href="https://mchang.name/">Michael Chang</a> and more.
+                <a href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlockSite/graphs/contributors">
+                    Spot SponsorBlockSite contributors
+                </a>.
             </p>
 
             <p>
-                Also, all of the <a href="/stats">segment submitters</a>.
+                Also, all of the <a href="https://leaderboard.sbstats.uk/">segment submitters</a>.
             </p>
         </div>
     </Layout>
