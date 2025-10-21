@@ -35,6 +35,20 @@ const IndexPage = () => (
                 overlapping segments will be sent to the user.
             </p>
 
+            <h3>Dynamic advertising</h3>
+
+            <p>
+                Some podcasts have dynamic ads inserted into their audio
+                tracks from services like Acast or Simplecast. These ads
+                are different for every user and are not part of the original
+                podcast audio. To prevent this from affecting submissions,
+                Spot SponsorBlock blocks Spotify from loading external
+                audio files which makes it fall back to the original podcast
+                audio uploaded by the podcast creator or service. This track
+                can still contain ads, but the audio track will stay the same
+                for all Spot SponsorBlock users.
+            </p>
+
             <h3>Pseudo-random distribution</h3>
 
             <p>

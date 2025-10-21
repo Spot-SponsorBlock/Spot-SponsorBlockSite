@@ -6,8 +6,8 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
-    const chromeLink = "https://chrome.google.com/webstore/detail/mnjggcdmjocbbbhaepdhchncahnbgone";
-    const firefoxLink = "https://addons.mozilla.org/addon/sponsorblock";
+    const chromeLink = "";
+    const firefoxLink = "";
 
     return (
         <Layout>
@@ -83,57 +83,6 @@ const IndexPage = () => {
                             <img
                                 src="/AMO-button_1.png"
                                 alt="Download for Firefox"
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/Edge"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/edge.png"
-                                alt="Download for Edge"
-                                style={{ height: "58px" }}
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/Safari"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/safari.svg"
-                                alt="Download for Safari"
-                                style={{ height: "58px" }}
-                            />
-                        </a>
-
-                        <a
-                            href={chromeLink}
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img src="/opera.png" alt="Download for Opera" />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/Android"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/android.png"
-                                alt="Download for Android"
-                                style={{ height: "58px" }}
-                            />
-                        </a>
-
-                        <a
-                            href="https://github.com/ajayyy/SponsorBlock/wiki/iOS"
-                            style={{ paddingLeft: "15px" }}
-                        >
-                            <img
-                                src="/IOS_logo.png"
-                                alt="Download for iOS"
-                                style={{ height: "58px" }}
                             />
                         </a>
                     </div>
