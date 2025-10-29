@@ -6,8 +6,10 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
-    const chromeLink = "";
-    const firefoxLink = "";
+    const chromeLink = "https://chromewebstore.google.com/detail/apoddhkbbnbfkhpjhpfdjachfifbedbk";
+    const firefoxLink = "https://addons.mozilla.org/addon/spot-sponsorblock/?src=external-github";
+    const edgeLink = "https://microsoftedge.microsoft.com/addons/detail/sponsorblock-for-spotify-/fekacklpnbdokmiljhjbmaclgpdegpcd";
+    const operaLink = "";
 
     return (
         <Layout>
@@ -68,7 +70,8 @@ const IndexPage = () => {
 
                     <div className="text-center">
                         <h2>Download</h2>
-
+                        
+                        <div className="extension-icon">
                         <a href={chromeLink}
                         >
                             <img
@@ -78,13 +81,41 @@ const IndexPage = () => {
                         </a>
 
                         <a href={firefoxLink}
-                            style={{ paddingLeft: "15px" }}
                         >
                             <img
                                 src="/AMO-button_1.png"
                                 alt="Download for Firefox"
                             />
                         </a>
+
+                        <a href={edgeLink}
+                        >
+                            <img
+                                src="/English_Get it from Microsoft Edge.png"
+                                alt="Download for Edge"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+
+                        <a href={operaLink}
+                        >
+                            <img
+                                src="/Opera_206x58_en@2x.png"
+                                alt="Download for Opera"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+
+                        <a
+                            href=""
+                        >
+                            <img
+                                src="/android.png"
+                                alt="Download for Android"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+                        </div>
                     </div>
 
                     <div className="donate-ask">
@@ -131,8 +162,7 @@ const IndexPage = () => {
                     </p>
 
                     <p style={{ fontSize: "0.7em", textAlign: "center" }}>
-                        Spot SponsorBlock works best alongside Spotify Premium and
-                        uBlock Origin.
+                        Spot SponsorBlock works best alongside Spotify Premium.
                     </p>
 
                     <h4 className="text-center">Credit</h4>
@@ -183,11 +213,11 @@ const IndexPage = () => {
                     </p>
 
                     <p className="text-center">
-                        <a href="https://gist.github.com/ajayyy/aa9f8ded2b573d4f73a3ffa0ef74f796">
+                        <a href="https://gist.github.com/kreativK/a67137bf0027e12e52ba38d375e1c132">
                             Privacy Policy (Human Readable)
                         </a>
                         {", "}
-                        <a href="https://gist.github.com/ajayyy/9e8100f069348e0bc062641f34d6af12">
+                        <a href="https://gist.github.com/kreativK/374f3e902cc4fab13120cdddb5367545">
                             Terms of Use
                         </a>
                     </p>

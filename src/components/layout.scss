@@ -38,6 +38,18 @@ img {
     max-width: 100%;
 }
 
+.extension-icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.extension-icon img {
+    height: auto;
+    max-width: 100%;
+}
+
 /* Title on home page */
 
 .title {
@@ -60,6 +72,7 @@ img {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav > * {
@@ -88,6 +101,10 @@ img {
     vertical-align: middle;
 
     border-radius: 15%;
+}
+
+.social {
+    width: 56px;
 }
 
 .fa {
