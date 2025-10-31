@@ -97,7 +97,7 @@ const IndexPage = () => {
                             />
                         </a>
 
-                        <a href={operaLink}
+                        {/* <a href={operaLink}
                         >
                             <img
                                 src="/Opera_206x58_en@2x.png"
@@ -114,7 +114,7 @@ const IndexPage = () => {
                                 alt="Download for Android"
                                 style={{ height: "58px" }}
                             />
-                        </a>
+                        </a> */}
                         </div>
                     </div>
 
