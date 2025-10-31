@@ -127,7 +127,7 @@ const IndexPage = () => (
                 2nd 2025. When our school project extension was done we forked
                 SponsorBlock and utilised our previous code and knowledge 
                 to make Spot SponsorBlock which started 29th September 2025.
-                It was first released to the public on ??th ??? 2025.
+                It was first released to the public on 26th October 2025.
             </p>
 
             <h2>Contact Info</h2>
