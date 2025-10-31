@@ -4,7 +4,7 @@ module.exports = {
         description:
             "Spot SponsorBlock is a crowdsourced browser extension to skip sponsor segments in Spotify podcasts.",
         author: "Spot SponsorBlock Team",
-        icon: "https://spotsponsorblock.org/LogoSponsorBlockSimple256px.png",
+        icon: "https://spotsponsorblock.org/WebsiteIcon.jpg",
     },
     plugins: [
         "gatsby-plugin-react-helmet",
