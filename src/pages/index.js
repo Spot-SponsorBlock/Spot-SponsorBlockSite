@@ -97,6 +97,26 @@ const IndexPage = () => {
                             />
                         </a>
 
+                        <div className="break"></div>
+
+                        <a
+                            href={chromeLink}
+                            style={{ paddingLeft: "15px" }}
+                        >
+                            <img src="/opera.png" alt="Download for Opera" />
+                        </a>
+
+                        <a
+                            href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/wiki/Android"
+                            style={{ paddingLeft: "15px" }}
+                        >
+                            <img
+                                src="/android.png"
+                                alt="Download for Android"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+
                         {/* <a href={operaLink}
                         >
                             <img
