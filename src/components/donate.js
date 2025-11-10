@@ -49,12 +49,26 @@ export function DonateComponent() {
                     <a href="https://github.com/sponsors/Spot-SponsorBlock">
                         GitHub (lowest fees)
                     </a>
+                    ,{" "}
+                    <a href="https://www.patreon.com/SpotSponsorBlock">Patreon</a>
+                    ,{" "}
+                    <a href="https://liberapay.com/Spot-SponsorBlock">Liberapay</a>
                 </p>
 
                 <p>
                     One-time donation:{" "}
                     <a href="https://github.com/sponsors/Spot-SponsorBlock?frequency=one-time">
                         GitHub (lowest fees)
+                    </a>
+                    ,{" "}
+                    <a style={{ textDecoration: "underline" }} onClick={() => {
+                        alert("BIC: SWEDSESS\nIBAN: SE12 8000 0810 5984 4216 3526");
+                    }}>SEPA</a>,{" "}
+                    <a href="bitcoin:bc1qssr38067xsfdgd0utucjp9j8v86fakkdw4ppzfjz9zgtlqm45ujse5ht30">
+                        BTC
+                    </a>,{" "}
+                    <a href="monero:44X5tzro79g2v97j43HAPWRVBS7o8w8uXRwrWvA9CmiGZyQChHiJySS558aWye3GNERAt8qA5CWu98qbtvHbSXg12rh4rqt">
+                        XMR
                     </a>
                 </p>
             </span>
