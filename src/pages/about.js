@@ -94,7 +94,7 @@ const IndexPage = () => (
 
             <p>
                 The bare minimum. Check{" "}
-                <a href="https://gist.github.com/ajayyy/aa9f8ded2b573d4f73a3ffa0ef74f796">
+                <a href="https://gist.github.com/kreativK/a67137bf0027e12e52ba38d375e1c132">
                     this list
                 </a>{" "}
                 for more information
