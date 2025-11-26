@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
 
                         <li>
                             <a
-                                href="https://wiki.sponsor.ajay.app/w/Guidelines"
+                                href="https://wiki.sponsor.ajay.app/w/Spot_SponsorBlock:Guidelines"
                                 className="nav-link"
                             >
                                 Guidelines
@@ -104,6 +104,17 @@ const Layout = ({ children }) => {
                                 title="Discord Invite"
                             >
                                 <i className="fa-brands fa-discord"></i>
+                            </a>
+                        </li>
+
+                        <li className="social">
+                            <a
+                                href="https://matrix.to/#/#sponsor:ajay.app?via=ajay.app&via=matrix.org&via=mozilla.org"
+                                className="nav-link"
+                                title="Matrix Invite"
+                                style={{ height: "28.8px" }}
+                            >
+                                <img src="/matrix.svg" style={{ height: "27px"}} />
                             </a>
                         </li>
 

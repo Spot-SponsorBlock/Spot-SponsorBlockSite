@@ -100,6 +100,17 @@ const IndexPage = () => {
                         <div className="break"></div>
 
                         <a
+                            href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/wiki/Safari"
+                            style={{ paddingLeft: "15px" }}
+                        >
+                            <img
+                                src="/safari.svg"
+                                alt="Download for Safari"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+
+                        <a
                             href={chromeLink}
                             style={{ paddingLeft: "15px" }}
                         >
@@ -113,6 +124,17 @@ const IndexPage = () => {
                             <img
                                 src="/android.png"
                                 alt="Download for Android"
+                                style={{ height: "58px" }}
+                            />
+                        </a>
+
+                        <a
+                            href="https://github.com/Spot-SponsorBlock/Spot-SponsorBlock-Extension/wiki/IOS"
+                            style={{ paddingLeft: "15px" }}
+                        >
+                            <img
+                                src="/IOS_logo.png"
+                                alt="Download for iOS"
                                 style={{ height: "58px" }}
                             />
                         </a>
@@ -172,12 +194,15 @@ const IndexPage = () => {
                     </p>
 
                     <p className="text-center">
-                        Check out <Link to="/about">how it works</Link>, and <a href="https://wiki.sponsor.ajay.app/w/Community">all the community tools</a>.
+                        Check out <Link to="/about">how it works</Link>, and <a href="https://wiki.sponsor.ajay.app/w/Spot_SponsorBlock:Community">all the community tools</a>.
                     </p>
 
                     <p className="text-center">
                         Come chat with us on{" "}
-                        <a href="https://discord.gg/SponsorBlock">Discord</a>
+                        <a href="https://discord.gg/SponsorBlock">Discord</a> or{" "}
+                        <a href="https://matrix.to/#/#sponsor:ajay.app?via=ajay.app&via=matrix.org&via=mozilla.org">
+                            Matrix
+                        </a>
                         .
                     </p>
 
