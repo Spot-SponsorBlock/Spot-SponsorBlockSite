@@ -53,6 +53,8 @@ export function DonateComponent() {
                     <a href="https://www.patreon.com/SpotSponsorBlock">Patreon</a>
                     ,{" "}
                     <a href="https://liberapay.com/Spot-SponsorBlock">Liberapay</a>
+                    ,{" "}
+                    <a href="https://buymeacoffee.com/spotsponsorblock">Buy Me a Coffee</a>
                 </p>
 
                 <p>
@@ -70,6 +72,8 @@ export function DonateComponent() {
                     <a href="monero:44X5tzro79g2v97j43HAPWRVBS7o8w8uXRwrWvA9CmiGZyQChHiJySS558aWye3GNERAt8qA5CWu98qbtvHbSXg12rh4rqt">
                         XMR
                     </a>
+                    ,{" "}
+                    <a href="https://buymeacoffee.com/spotsponsorblock">Buy Me a Coffee</a>
                 </p>
             </span>
         </>
